@@ -1,16 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './App.css'
 import { FormArea } from './components/FormArea/FormArea'
+import { TotalArea } from './components/TotalArea'
 
 const App: React.FC = () => {
-    const [adult, setAdult] = useState(0);
-    const [student, setStudent] = useState(0);
-    const [child, setChild] = useState(0);
-    const [baby, setBaby] = useState(0);
 
     return (
         <div className='app'>
             <FormArea />
+            <TotalArea />
         </div>
     )
 }
